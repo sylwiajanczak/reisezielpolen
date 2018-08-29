@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Reiseziel Polen</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="keywords" content="" />
+
+		<meta name="description" content="" />
+
+		<meta name="author" content="Light Code Sp. z o.o. dla Reiseziel Polen">
+
+		<meta property="og:type" content="article" />
+	    <meta property="og:url" content="http://reiseziel-polen.de/" />
+	    <meta property="og:title" content="Reiseziel Polen" />
+	    <meta property="og:site_name" content="Reiseziel Polen" />
+	    <meta property="og:description" content=""/>
+		
+		<link rel="stylesheet" href="w3.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Museo Sans -->
+		<link rel="stylesheet" href="https://use.typekit.net/tbu2qkx.css">
+
+	</head>
+	<body>
+	<div class="w3-display-container">
+
+		<!-- Sidebar -->
+		<nav class="w3-sidebar w3-reda w3-animate-top w3-xxlarge" style="display:none;padding-top:100px" id="mySidebar">
+			<a href="#" class="social-icon pinezka"><img src="img/ikona_lokalizacji_biala.png" style="width: 30%"><!-- <i class="fa fa-map-marker"></i> --></a>
+		  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-reda w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+<!--			<i class="fa fa-remove"></i>--><img src="img/ikona_zamkniecia_menu.png" style="width: 50%; margin-right: -1em; margin-bottom: 0.1em">
+		  </a>
+		  <div class="w3-bar-block w3-center menu-desktop">
+			<a href="#" class="w3-bar-item">Reiseziel<p class="bar-item-menu">Polen</p></a>
+			<a href="#" class="w3-bar-item">Entdecke<p class="bar-item-menu">das Land</p></a>
+			<a href="#" class="w3-bar-item">Interessante<p class="bar-item-menu">Orte</p></a>
+			<a href="#" class="w3-bar-item">Worldwide</a>
+			<a href="#" class="w3-bar-item">Unsere<p class="bar-item-menu">Partner</p></a>
+		
+			<span class="horizon horizon-menu"></span>
+			<a href="#" class="w3-bar-item">+49 (0) 3581 688 29 50</a>
+		  </div>
+<!--
+			<div class="footer-social-icons social-menu">
+				<ul class="social-icons">
+					<li><a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" class="social-icon"> <i class="fa fa-google"></i></a></li>
+				  <li><a href="#" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+-->
+			
+		</nav>
+		<!-- Header -->
+		<div class="w3-opacity">
+		<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars w3-right"></i></span> 
+		</div>
+
+
+	<section id="worldwide" class="w3-center">
+	<header>
+		
+	</header>
+	</section>
+
+
+	
+
+	
+
+
+<!--
+	<footer class="w3-center w3-padding-48">
+	<img src="img/logo_stopka.png" />
+
+		<nav>
+			<a href="#reiseziel_polen" class="w3-padding">Reiseziel Polen</a>
+			<a target="_blank" class="w3-padding" href="/Datenschutzerklarung_Impressum_Reiseziel_Polen.pdf">Datenschutz und Impressum</a>
+			<a href="#dla_hoteli" class="w3-padding">Hotels and other</a>
+		</nav>
+
+		<br/>
+		Obermarkt 29 Görlitz, DE 02826 <br/>
+		info@reiseziel-polen.de   \\  Tel: 03581-6881452
+	</footer>
+-->
+
+
+<script type="text/javascript">
+function setPage(href) {
+	
+	var elem = document.querySelector(href);
+
+	if (elem) {
+		//clear All
+		document.getElementById("reiseziel_polen").style.display = "none";
+		document.getElementById("dla_hoteli").style.display = "none";
+		document.getElementById("welcome").style.display = "none";
+
+		//set display
+		document.querySelector(href).style.display = "block";
+		document.querySelector("footer").style.display = (href == "#welcome") ? "none" : "block";
+		
+		//scroll top
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
+	}
+}
+	document.addEventListener("DOMContentLoaded", function(event) {
+		var elems = document.querySelectorAll("a");
+		for (var i=0; i<elems.length; i++) {
+			elems[i].addEventListener("click", function(e) {
+				//e.preventDefault();
+
+				var href = this.getAttribute("href");
+				if (href == "/") href = "#welcome";
+
+				setPage(href);
+
+			});		
+		}
+
+		//init
+		var href = window.location.hash;
+		if (href == "" || href == "/") href = "#welcome";
+		setPage(href);
+	});
+	//	HAMBURGER MENU
+// Open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</div>
+</body>
+</html>

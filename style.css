@@ -1,0 +1,1073 @@
+/*
+Theme Name: reiseziel
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: reiseziel
+*/
+
+@font-face {
+  font-family: 'Museo';
+  src: url('fonts/Museo-700.woff2') format('woff2'),
+       url('fonts/Museo-700.woff') format('woff'),
+       url('fonts/exljbris_Museo-700.otf') format('otf'),
+       url('fonts/Museo-700.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo';
+  src: url('fonts/Museo-500.woff2') format('woff2'),
+       url('fonts/Museo-500.woff') format('woff'),
+       url('fonts/exljbris_Museo-500.otf') format('otf'),
+       url('fonts/Museo-500.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo';
+  src: url('fonts/Museo-300.woff2') format('woff2'),
+       url('fonts/Museo-300.woff') format('woff'),
+       url('fonts/exljbris_Museo-300.otf') format('otf'),
+       url('fonts/Museo-300.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+    font-family: "Museo", Times, serif !important;
+}
+
+ul {
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+.w3-content {
+    max-width: 700px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 36px/1 FontAwesome !important;
+}
+.w3-white {
+	background-color: transparent !important;
+}
+
+section#welcome {
+	background: url(img/hero_image_landingpage-1400px.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    xbackground-size: 300vh;
+    background-position: center;
+    text-align: center;    
+    overflow: hidden;
+}
+section#landingpage {
+    background: url(img/bg_sand.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    xbackground-size: 300vh;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+}
+section#worldwide {
+    background: url(img/kobieta_z_plecakiem.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    xbackground-size: 300vh;
+    background-position: right;
+    text-align: center;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 480px) {
+    section#welcome {
+        bxackground-position: center -60vh;
+    }
+	section#landingpage {
+        bxackground-position: center -60vh;
+    }
+	section#worldwide {
+        bxackground-position: center -60vh;
+    }
+}
+
+section#welcome {
+    color: #fff;
+}
+section#landingpage {
+	color: #fff;
+}
+
+section#welcome h1 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 7vh;
+    margin-left: 10vh;
+    margin-right: 10vw;
+}
+section#landingpage h1 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 7vh;
+    margin-left: 10vh;
+    margin-right: 10vw;
+}
+
+header img {
+	width: 30vh;
+    max-width: 30%;
+}
+
+
+section#welcome nav {
+    position: absolute;
+    top: 45vh;
+    width: 100%;
+}
+
+section#landingpage nav {
+	position: absolute;
+	top: 45vh;
+	width: 100%;
+}
+
+section#welcome a {
+    display: block;
+    margin: 3em auto;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 45px ;
+    width: 320px;
+    color: #5C5721;
+    border: 0px solid #5C5721;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.9);
+}
+section#landingpage a {
+    display: block;
+    margin: 3em auto;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 45px ;
+    width: 320px;
+    color: #5C5721;
+    border: 0px solid #5C5721;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.9);
+}
+
+section#welcome a:hover {
+    color: #000;
+}
+
+
+/***********************/
+
+.hightl1 {
+    color: #DC143C;
+}
+
+img.pickdown {
+    margin-top: 2em;
+    width: 50px;
+}
+
+.horizon {
+    padding-left: 7em;
+    border-top: 2px solid #fff;
+    min-height: 1px;
+    margin-left: 1em;
+}
+
+.horizon_discovery {
+	border-top-color: #DC143C;
+}
+
+.horizon_places {
+	border-top-color: #DC143C;
+}
+.horizon_right {
+	float: right;
+    display: block;
+	border-top: 2px solid #DC143C;
+    min-height: 1px;
+    margin-left: 1em;
+	text-decoration: none;
+    color: black;
+}
+
+section.classic p, article p {
+/*    text-align: justify;*/
+    padding: 1em 1em;
+}
+
+section.classic h1 {
+    color: #fff;
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 7vh;
+    margin-left: 7vh;
+    margin-right: 7vw;
+}
+
+section.classic h3,
+section.classic h2,
+article h2,
+article h3 {
+    padding-left: 0.5em;
+    padding-right: 1em;
+	line-height: 39px;
+	font-weight: 700;
+}
+
+section.classic header {
+    background: url(img/bg_look.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-position: 0 -5em;
+    text-align: center;    
+}
+
+section.classic #classic_discovery {
+    background: url(img/ludzie_z_mapa_www_1400px.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-position: 0em -15em;
+    text-align: center; 
+	height: 100vh;
+    object-fit: cover;
+}
+section.classic #classic_hotels {
+    background: url(img/ludzie_z_mapa_www_1400px.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-position: 0em -15em;
+    text-align: center; 
+	height: 100vh;
+    object-fit: cover;
+}
+section.classic #classic_places{
+	background: url(img/Krakow.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-position: 0em -15em;
+    text-align: center; 
+	height: 100vh;
+    object-fit: cover;
+}
+
+section.classic header p {
+    max-width: 500px;
+    color: #fff;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 1.3em;
+}
+
+section#reiseziel_polen header {
+    background-image: url(img/women_with_map.jpg);
+    background-position: 0em -15em;
+}
+section.classic #schlesien {
+	background: url(img/slask_kolko.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-position: 0em -15em;
+    text-align: center; 
+	height: 100vh;
+    object-fit: cover;
+}
+section.classic #baltyk {
+	background: url(img/baltyk_kolko.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-position: 0em -15em;
+    text-align: center; 
+	height: 100vh;
+    object-fit: cover;
+}
+section.classic #city {
+	background: url(img/wroclaw_kolko.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-position: 0em -15em;
+    text-align: center; 
+	height: 100vh;
+    object-fit: cover;
+}
+section.classic #masuren {
+	background: url(img/mazury_kolko.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-position: 0em -15em;
+    text-align: center; 
+	height: 100vh;
+    object-fit: cover;
+}
+article.apla {
+    background-image: url(img/czerwony_hero-1200px.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: #fff;
+}
+
+/*
+article.watermark {
+    background-image: url(img/watermark.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: #000;
+}
+*/
+.wrapper_2{
+    background-image: url(img/watermark.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: #000;
+}
+
+article.watermark h2 {
+    color: #777;
+}
+article.watermark .horizon,
+article.impress .horizon {
+    border-top-color: #777;
+
+}
+article .discovery {
+	color: #DC143C;
+}
+
+.places_title {
+	color: #777;
+	font-size: 20px;
+	line-height: 0;
+	padding-left: 1em;
+}
+.places_subtitle p {
+	padding-left: 1.5em;
+	padding-top: 0;
+	color: #777;
+	font-size: 14px;
+}
+.places_Slask {
+	color: #dd083a;
+	font-weight: 700;
+}
+.places_Baltyk {
+	color: #3898b4;
+	border-top-color: #3898b4;
+	font-weight: 700;
+}
+.horizon_Baltyk {
+	border-top-color: #3898b4;
+}
+.places_city {
+	color: #f49815;
+	border-top-color: #f49815;
+	font-weight: 700;
+}
+.horizon_city {
+	border-top-color: #f49815;
+}
+.places_Mazury {
+	color: #68b439;
+	border-top-color: #68b439;
+	font-weight: 700;
+}
+.horizon_Mazury {
+	border-top-color: #68b439;
+}
+.places_hotel1 {
+	color: #dd083a;
+	font-weight: 700;
+}
+
+
+footer {
+    background-color: #9B9B9B;
+}
+
+footer nav a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+footer nav a:first-child {
+    border-right: 1px solid #fff;
+}
+/*
+footer nav a:last-child {
+    border-left: 1px solid #fff;
+}
+*/
+
+
+footer img {
+    max-width: 200px;
+    margin-bottom: 2em;
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul.topnav li {
+	display: inline-block;
+}
+
+.wpcf7-form {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.wpcf7-form p {
+    text-align: center;
+    padding: 0.5em 0;
+    color: gray;
+    margin: 0;
+}
+
+.wpcf7-form input, .wpcf7-form textarea {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 8px;
+    color: gray;
+}
+
+.wpcf7-form input[type='number'] {
+    text-align: left;
+    margin-left: 30px;
+}
+.wpcf7-form input[type='submit'] {
+    padding: 10px 35px;
+    background-color: #87dc14;
+}
+.wpcf7-form label {
+    padding: 0;
+}
+.right {
+    text-align: right !important;
+}
+.left {
+    text-align: left !important;
+}
+.wpcf7-form p.left  {
+    padding-left: 0.5em;  
+    line-height: 0;  
+}
+div.wpcf7 {
+	margin: 0;
+	padding: 0;
+}
+
+div.wpcf7-response-output {
+	margin: 2em 0.5em 1em;
+	padding: 0.2em 1em;
+}
+
+div.wpcf7 .screen-reader-response {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	width: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+div.wpcf7-mail-sent-ok {
+	border: 2px solid #398f14;
+}
+
+div.wpcf7-mail-sent-ng {
+	border: 2px solid #ff0000;
+}
+
+div.wpcf7-spam-blocked {
+	border: 2px solid #ffa500;
+}
+
+div.wpcf7-validation-errors {
+	border: 2px solid #f7e700;
+}
+
+.wpcf7-form-control-wrap {
+	position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+	color: #f00;
+	font-size: 1em;
+	font-weight: normal;
+	display: block;
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 100;
+	border: 1px solid #ff0000;
+	background: #fff;
+	padding: .2em .8em;
+}
+
+span.wpcf7-list-item {
+	display: inline-block;
+	margin: 0 0 0 1em;
+}
+
+span.wpcf7-list-item-label::before,
+span.wpcf7-list-item-label::after {
+	content: " ";
+}
+
+.wpcf7-display-none {
+	display: none;
+}
+
+div.wpcf7 .ajax-loader {
+	visibility: hidden;
+	display: inline-block;
+	background-image: url('../../images/ajax-loader.gif');
+	width: 16px;
+	height: 16px;
+	border: none;
+	padding: 0;
+	margin: 0 0 0 4px;
+	vertical-align: middle;
+}
+
+div.wpcf7 .ajax-loader.is-active {
+	visibility: visible;
+}
+
+div.wpcf7 div.ajax-error {
+	display: none;
+}
+
+div.wpcf7 .placeheld {
+	color: #888;
+}
+
+div.wpcf7 .wpcf7-recaptcha iframe {
+	margin-bottom: 0;
+}
+
+div.wpcf7 input[type="file"] {
+	cursor: pointer;
+}
+
+div.wpcf7 input[type="file"]:disabled {
+	cursor: default;
+}
+
+.w3-opacity span {
+/*	z-index: 999;*/
+	position: fixed;
+	width: 100%;
+}
+
+.w3-reda {
+	color: #fff!important;
+	background-color: #DC143C!important;
+}
+.w3-bar-item {
+	text-decoration: none;
+}
+.w3-bar-item:hover {
+	color: #cecdcd!important;
+}
+.horizon-menu {
+	margin-left: 0;
+}
+
+.wrapper{
+	background-color: #F8F5F5;
+}
+.w3-circle {
+	width: 235px;
+    height: 231px;
+    object-fit: cover;
+}
+
+
+.fa {
+	border-radius: 50%;
+	display: inline-block;
+  	font-size: 30px;
+  	text-align: center;
+  	text-decoration: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+ul {
+    padding: 1em 1em;
+    list-style: none;
+}
+.footer-social-icons {
+    display:block;
+    margin: 0 auto;
+	margin-left: 4vh;
+    margin-right: 4vh;
+    margin-bottom: 2em;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+/*    color: #fff;*/
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 20px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+/*    background-color: #322f30;*/
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+/*    background-color: #322f30;*/
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-google {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-google:hover {
+    background-color: #e25714;
+}
+.fa-instagram {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+}
+.fa-instagram:hover {
+    background-color: pink;
+}
+.social-menu {
+	 text-align: center;
+}
+.pinezka {
+	position: absolute;
+    top: 5px;
+    left: 11px;
+}
+.menu-desktop a {
+	font-size: 31px;
+}
+
+.w3-center p {
+	font-size: 20px;
+}
+.logo_mobile {
+    display: block;
+	width: 20vh;
+	visibility: hidden;
+}
+p {
+	font-family: Museo Sans !important;
+}
+
+@media screen and (max-width: 480px) {
+    section#reiseziel_polen header,
+    section.classic header,
+	section.classic #classic_discovery,
+	section.classic #classic_places,
+	section.classic #schlesien,
+	section.classic #baltyk,
+	section.classic #city,
+	section.classic #masuren,
+	section.classic #classic_hotels {
+        background-position: top;
+    }
+    section.classic h1  {
+        text-align: left;
+		line-height: 39px;
+    }
+	form.wpcf7-form {
+		width: 100%;
+	}
+	form.wpcf7-form p.left {
+		padding-left: 6em;
+	}
+	.wpcf7-form p.right {
+		padding: 0.5em 70px;
+	}
+	section#landingpage a {
+		margin: 1em auto;
+	}
+	section#welcome a {
+		margin: 1em auto;
+	}
+	.menu-desktop a {
+		font-size: 17px;
+	}
+	.w3-center p {
+		font-size: 13px;
+	}
+	.w3-circle {
+		margin-left: 2em;
+		width: 170px;
+    	height: 166px;
+    	object-fit: cover;
+	}
+	.w3-content {
+		margin-left: 4vh;
+    	margin-right: 4vh;
+	}
+	footer nav a:first-child {
+    	border-right: 0px solid #fff;
+	}
+	footer nav {
+		margin-left: 4vh;
+		margin-right: 4vh;
+	}
+	section#landingpage nav {
+    	top: 55vh;
+	}
+	section#welcome nav {
+		top: 55vh;
+	}
+	.horizon_right {
+		margin-right: 4vh;
+	}
+	.horizon {
+    	padding-left: 3.5em;
+	} 
+	section.classic header p{
+		margin-left: 4vh;
+		margin-right: 4vh;
+	}
+	.social-media ul {
+		padding-left: 1.5em;
+    	padding-right: 1.5em;
+		text-align: center;
+	}
+	section#reiseziel_polen header {
+    	background-image: url(img/kobieta_z_mapa_www_mobile.jpg);
+    	background-position: top;
+	}
+	section.classic #schlesien {
+		height: 50vh;
+    	object-fit: cover;
+	}
+	section.classic #baltyk {
+		height: 50vh;
+    	object-fit: cover;
+	}
+	section.classic #city {
+		height: 50vh;
+    	object-fit: cover;
+	}
+	section.classic #masuren {
+		height: 50vh;
+    	object-fit: cover;
+	}
+	.w3-white {
+    	color: #000!important;
+   		background-color: #fff!important;
+	}
+	header img {
+		visibility: hidden;
+	}
+	.logo_mobile {
+    	display: block;
+		width: 20vh;
+		visibility: visible;
+	}
+	.w3-opacity {
+		opacity: 1;
+	}
+	h6 {
+		margin-left: 4vh;
+    	margin-right: 4vh;
+		margin-bottom: -3vh;
+		color: #777;
+	}
+	section.classic #classic_discovery{
+		height: 50vh;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+	section#reiseziel_polen header,
+    section.classic header,
+	section.classic #classic_discovery,
+	section.classic #classic_places,
+	section.classic #schlesien,
+	section.classic #baltyk,
+	section.classic #city,
+	section.classic #masuren,
+	section.classic #classic_hotels {
+        background-position: top;
+    }
+	section.classic h1  {
+        text-align: left;
+    }
+	form.wpcf7-form {
+		width: 100%;
+	}
+	form.wpcf7-form p.left {
+		padding-left: 6em;
+	}
+	.wpcf7-form p.right {
+		padding: 0.5em 70px;
+	}
+	section#landingpage a {
+		margin: 1em auto;
+	}
+	section#welcome a {
+		margin: 1em auto;
+	}
+	.w3-bar-item {
+		font-size: 32px;
+	}
+	.w3-circle {
+		margin-left: 2em;
+	}
+	.w3-content {
+		margin-left: 4vh;
+    	margin-right: 4vh;
+	}
+	footer nav {
+		margin-left: 4vh;
+		margin-right: 4vh;
+	}
+	section#landingpage nav {
+    	top: 54vh;
+	}
+	section#welcome nav {
+		top: 54vh;
+	}
+	.horizon_right {
+		margin-right: 4vh;
+	}
+	section.classic header p{
+		margin-left: 4vh;
+		margin-right: 4vh;
+	}
+	section.classic #schlesien {
+		height: 50vh;
+    	object-fit: cover;
+	}
+	section.classic #baltyk {
+		height: 50vh;
+    	object-fit: cover;
+	}
+	section.classic #city {
+		height: 50vh;
+    	object-fit: cover;
+	}
+	section.classic #masuren {
+		height: 50vh;
+    	object-fit: cover;
+	}
+	.w3-white {
+    	color: #000!important;
+    	background-color: #fff!important;
+	}
+	header img {
+		visibility: hidden;
+	}
+	.logo_mobile {
+    	display: block;
+		width: 20vh;
+		visibility: visible;
+	}
+	.w3-opacity {
+		opacity: 1;
+	}
+	h6 {
+		margin-left: 4vh;
+    	margin-right: 4vh;
+		color: #777;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.w3-circle {
+    	margin-left: 1em;
+		width: 189px;
+   		height: 175px;
+    	object-fit: cover;
+	}
+	
+}
+
+@media screen and (min-width: 601px) and (max-width: 990px) {
+	section#reiseziel_polen header,
+    section.classic header,
+	section.classic #classic_discovery,
+	section.classic #classic_places,
+	section.classic #schlesien,
+	section.classic #baltyk,
+	section.classic #city,
+	section.classic #masuren,
+	section.classic #classic_hotels {
+        background-position: top;
+    }
+	section.classic h1  {
+        text-align: left;
+    }
+	form.wpcf7-form {
+		width: 100%;
+	}
+	form.wpcf7-form p.left {
+		padding-left: 6em;
+	}
+	.wpcf7-form p.right {
+		padding: 0.5em 70px;
+	}
+	section#landingpage a {
+		margin: 1em auto;
+	}
+	section#welcome a {
+		margin: 1em auto;
+	}
+	.w3-bar-item {
+		font-size: 32px;
+	}
+	.w3-circle {
+		margin-left: 2em;
+	}
+	.w3-content {
+		margin-left: 4vh;
+    	margin-right: 4vh;
+	}
+	footer nav {
+		margin-left: 4vh;
+		margin-right: 4vh;
+	}
+	section#landingpage nav {
+    	top: 54vh;
+	}
+	section#welcome nav {
+		top: 54vh;
+	}
+	.horizon_right {
+		margin-right: 4vh;
+	}
+	section.classic header p{
+		margin-left: 4vh;
+		margin-right: 4vh;
+	}
+	section.classic #schlesien {
+		height: 50vh;
+    	object-fit: cover;
+	}
+	section.classic #baltyk {
+		height: 50vh;
+    	object-fit: cover;
+	}
+	section.classic #city {
+		height: 50vh;
+    	object-fit: cover;
+	}
+	section.classic #masuren {
+		height: 50vh;
+    	object-fit: cover;
+	}
+	.w3-white {
+    	color: #000!important;
+    	background-color: #fff!important;
+	}
+	header img {
+		visibility: hidden;
+	}
+	.logo_mobile {
+    	display: block;
+		width: 20vh;
+		visibility: visible;
+	}
+	.w3-opacity {
+		opacity: 1;
+	}
+	h6 {
+		margin-left: 4vh;
+    	margin-right: 4vh;
+		color: #777;
+	}
+}
+
+@media screen and (min-width: 991px) {
+	.w3-opacity {
+		visibility: hidden;
+	}
+	.w3-opacity img {
+		visibility: hidden;
+	}
+}
+
